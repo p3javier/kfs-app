@@ -1,6 +1,15 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: 300,
+      sm: 800,
+      md: 960,
+      lg: 1080,
+      xl: 1360,
+    },
+  },
   palette: {
     primary: {
       main: "#f8b816",
@@ -22,7 +31,7 @@ const theme = createMuiTheme({
       root: {
         flexGrow: 1,
         boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-        minHeight: 100,
+        maxHeight: 100,
       },
     },
     MuiToolbar: {

@@ -19,6 +19,21 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       marginRight: theme.spacing(7),
       marginTop: theme.spacing(3),
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 11,
+      },
+      [theme.breakpoints.up("md")]: {
+        fontSize: 16,
+      },
+      [theme.breakpoints.up("lg")]: {
+        fontSize: 18,
+      },
+    },
+    buttonsSection: {
+      flexGrow: 1,
+    },
+    mobileIcon: {
+      flexGrow: 1,
     },
   })
 );
@@ -37,26 +52,40 @@ export default function ButtonAppBar() {
         >
           <MenuIcon fontSize="large" />
         </IconButton>
-        <Hidden xsDown>
-          <Button>
-            <Typography variant="h6" className={classes.title}>
-              NUESTRA CARTA
-            </Typography>
-          </Button>
+        <Hidden smDown>
+          <div className={classes.buttonsSection}>
+            <Button>
+              <Typography variant="h6" className={classes.title}>
+                NUESTRA CARTA
+              </Typography>
+            </Button>
 
-          <Button className="inherit">
-            <Typography variant="h6" className={classes.title}>
-              CUPONES
-            </Typography>
-          </Button>
+            <Button className="inherit">
+              <Typography variant="h6" className={classes.title}>
+                CUPONES
+              </Typography>
+            </Button>
 
-          <Button className="inherit">
-            <Typography variant="h6" className={classes.title}>
-              ENCUENTRANOS
-            </Typography>
-          </Button>
+            <Button className="inherit">
+              <Typography variant="h6" className={classes.title}>
+                ENCUENTRANOS
+              </Typography>
+            </Button>
+          </div>
+          <div id="screen large">
+            <HomeIcon />
+          </div>
         </Hidden>
-        <HomeIcon />
+        <Hidden only={["xs", "md", "lg", "xl"]}>
+          <div className={classes.mobileIcon} id="screen medium">
+            <HomeIcon position="center" />
+          </div>
+        </Hidden>
+        <Hidden only={["sm", "md", "lg", "xl"]}>
+          <div className={classes.mobileIcon}>
+            <HomeIcon position="center" size={100} margin="small" />
+          </div>
+        </Hidden>
       </Toolbar>
     </AppBar>
   );
