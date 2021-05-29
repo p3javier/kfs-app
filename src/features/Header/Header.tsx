@@ -35,6 +35,13 @@ const useStyles = makeStyles((theme: Theme) =>
     mobileIcon: {
       flexGrow: 1,
     },
+    hotDogKing: {
+      marginRight: theme.spacing(7),
+      marginTop: theme.spacing(3),
+      [theme.breakpoints.up("sm")]: {
+        fontSize: 25,
+      },
+    },
   })
 );
 
@@ -77,6 +84,9 @@ export default function ButtonAppBar() {
           </div>
         </Hidden>
         <Hidden only={["xs", "md", "lg", "xl"]}>
+          <Typography variant="h3" className={classes.hotDogKing}>
+            HOT DOG KING
+          </Typography>
           <div className={classes.mobileIcon} id="screen medium">
             <HomeIcon position="center" />
           </div>
