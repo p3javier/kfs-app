@@ -1,18 +1,19 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 import Astana from "./app/fonts/Astana-regular-italic.woff2";
-import { FontFace } from "./theme";
+import { FontFace } from "./fontFaceInterface";
 
 const astanaWeb: FontFace = {
   fontFamily: "Astana",
   fontStyle: "regular-italic",
   fontDisplay: "swap",
+  fontWeight: "600",
   src: `
   local('Astana'),
    local('Astana-regular-italic'),
    url(${Astana}) format('woff2')
   `,
   unicodeRange:
-    "U+0034, U+0035, U+0037, U+0039, U+0048-0091, U+0093, U+0097-0122, U+0192-0220, U+0224-0252",
+    "U+0034, U+0035, U+0037, U+0039, U+0041-0091, U+0093, U+0097-0122, U+0192-0220, U+0224-0252",
 };
 const theme = createMuiTheme({
   breakpoints: {
@@ -35,6 +36,13 @@ const theme = createMuiTheme({
   },
   spacing: 0,
 
+  typography: {
+    fontFamily: ["Roboto", '"Open Sans"', "Astana"].join(","),
+    h2: {
+      fontFamily: "Astana",
+      fontSize: "7rem",
+    },
+  },
   overrides: {
     MuiButton: {
       text: {
@@ -55,7 +63,6 @@ const theme = createMuiTheme({
     },
     MuiCssBaseline: {
       "@global": {
-        //@ts-ignore
         "@font-face": [astanaWeb],
       },
     },

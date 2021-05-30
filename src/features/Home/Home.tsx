@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import HomeMosaic from "../../app/components/HomeMosaic/HomeMosaic";
 import EmailSub from "../../app/components/EmailSub/EmailSub";
+import CorpBanner from "../../app/components/CorporativeBanner/CorpBanner";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -36,7 +37,9 @@ export default function CenteredGrid() {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>xs=6</Paper>
+          <Paper className={classes.paper}>
+            <CorpBanner />
+          </Paper>
         </Grid>
       </Grid>
     </div>
