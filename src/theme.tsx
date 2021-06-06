@@ -37,7 +37,7 @@ const theme = createMuiTheme({
   spacing: 0,
 
   typography: {
-    fontFamily: ["Roboto", '"Open Sans"', "Astana"].join(","),
+    fontFamily: ["Roboto", "Helvetica", "Arial", "sans-serif"].join(","),
     h2: {
       fontFamily: "Astana",
       fontSize: "7rem",

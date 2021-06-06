@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: "#3a1313",
       color: "#fff",
       minHeight: 400,
+      fontFamily: "Roboto !important",
     },
     content: {
       padding: "3rem  2rem",
@@ -27,9 +28,11 @@ export default function Footer() {
   return (
     <footer className={classes.footer}>
       <Grid container spacing={4} className={classes.content}>
-        <Grid item xs={12} sm={2} className={classes.text}>
-          <Typography variant="h6">Nuestra comida</Typography>
-          <List dense>
+        <Grid item xs={12} sm={2}>
+          <Typography variant="h6" className={classes.text}>
+            Nuestra comida
+          </Typography>
+          <List dense className={classes.text}>
             <ListItem>
               <ListItemText>Los más vendidos</ListItemText>
             </ListItem>
