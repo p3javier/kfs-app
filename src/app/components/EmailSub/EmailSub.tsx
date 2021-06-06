@@ -62,9 +62,9 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function EmailSub() {
   const classes = useStyles();
   const theme = useTheme();
-  const sizeOverXs = useMediaQuery(theme.breakpoints.up("sm"));
+  const sizeOverSm = useMediaQuery(theme.breakpoints.up("sm"));
   let colsNumber: boolean | GridSize;
-  if (sizeOverXs) {
+  if (sizeOverSm) {
     colsNumber = 7;
   } else {
     colsNumber = 12;
