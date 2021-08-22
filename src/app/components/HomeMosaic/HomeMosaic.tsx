@@ -1,15 +1,28 @@
 import React from "react";
-import { useTheme } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
+import {
+  Theme,
+  createStyles,
+  makeStyles,
+  useTheme,
+} from "@material-ui/core/styles";
+import Box from "@material-ui/core/Box";
 
-import MainBanner from "../../images/hdk-main.webp";
-import Cubos from "../../images/cubos-para.jpg";
-import AppOffer from "../../images/app-offer.jpg";
-import SecondOffer from "../../images/sobrada.jpg";
-
-export default function MosaicGirdList() {
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    mainBanner: {
+      height: theme.spacing(40),
+    },
+    secondaryBanner: {
+      height: theme.spacing(30),
+    },
+  })
+);
+export default function HeadBanner() {
+  const classes = useStyles();
   const theme = useTheme();
   const sizeOverSm = useMediaQuery(theme.breakpoints.up("sm"));
   let rowNumber: number | undefined;
@@ -22,19 +35,26 @@ export default function MosaicGirdList() {
     colsNumber = 3;
   }
   return (
-    <GridList cellHeight={250} cols={3}>
-      <GridListTile cols={3} rows={rowNumber}>
-        <img src={MainBanner} alt="main-banner" />
-      </GridListTile>
-      <GridListTile cols={colsNumber} rows={2}>
-        <img src={Cubos} alt="offer-banner" />
-      </GridListTile>
-      <GridListTile cols={colsNumber} rows={2}>
-        <img src={AppOffer} alt="offer-banner" />
-      </GridListTile>
-      <GridListTile cols={colsNumber} rows={2}>
-        <img src={SecondOffer} alt="offer-banner" />
-      </GridListTile>
-    </GridList>
+    <Grid container spacing={3}>
+      <Grid item xs={12}>
+        <Paper className={classes.mainBanner} elevation={4}>
+          <Typography variant="h1">Medusa Events</Typography>
+        </Paper>
+      </Grid>
+      <Grid item xs={6}>
+        <Paper className={classes.secondaryBanner} elevation={4}>
+          <Typography variant="h2">
+            AGENCIA ESPECIALIZADA EN DESPEDIDAS DE SOLTERO/A
+          </Typography>
+        </Paper>
+      </Grid>
+      <Grid item xs={6}>
+        <Paper className={classes.secondaryBanner} elevation={4}>
+          <Typography variant="h2">
+            MAXIMA PROFESIONALIDAD EN NUESTRO SERVICIO
+          </Typography>
+        </Paper>
+      </Grid>
+    </Grid>
   );
 }

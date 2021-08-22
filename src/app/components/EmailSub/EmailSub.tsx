@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme: Theme) =>
       marginLeft: theme.spacing(2),
     },
     title: {
-      color: "black",
       marginRight: theme.spacing(6),
       marginTop: theme.spacing(3),
       [theme.breakpoints.down("sm")]: {

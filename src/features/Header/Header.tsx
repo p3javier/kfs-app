@@ -63,19 +63,19 @@ export default function ButtonAppBar() {
           <div className={classes.buttonsSection}>
             <Button>
               <Typography variant="h6" className={classes.title}>
-                NUESTRA CARTA
+                SERVICIOS
               </Typography>
             </Button>
 
             <Button className="inherit">
               <Typography variant="h6" className={classes.title}>
-                CUPONES
+                CIUDADES
               </Typography>
             </Button>
 
             <Button className="inherit">
               <Typography variant="h6" className={classes.title}>
-                ENCUENTRANOS
+                CONTACTA CON NOSOTROS
               </Typography>
             </Button>
           </div>

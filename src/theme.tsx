@@ -1,6 +1,8 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 import Astana from "./app/fonts/Astana-regular-italic.woff2";
 import { FontFace } from "./fontFaceInterface";
+import indigo from "@material-ui/core/colors/indigo";
+import deepPurple from "@material-ui/core/colors/deepPurple";
 
 const astanaWeb: FontFace = {
   fontFamily: "Astana",
@@ -26,12 +28,13 @@ const theme = createMuiTheme({
     },
   },
   palette: {
+    type: "dark",
     primary: {
-      main: "#f8b816",
+      main: indigo[600],
       contrastText: "#fff",
     },
     secondary: {
-      main: "#e53743",
+      main: deepPurple[700],
     },
   },
   spacing: 0,
@@ -39,8 +42,10 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: ["Roboto", "Helvetica", "Arial", "sans-serif"].join(","),
     h2: {
-      fontFamily: "Astana",
-      fontSize: "7rem",
+      fontSize: "3rem",
+    },
+    h1: {
+      fontSize: "4rem",
     },
   },
   overrides: {
@@ -52,7 +57,6 @@ const theme = createMuiTheme({
     MuiAppBar: {
       root: {
         flexGrow: 1,
-        boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
         maxHeight: 100,
       },
     },
