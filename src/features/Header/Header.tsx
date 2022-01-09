@@ -8,6 +8,8 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Hidden from "@material-ui/core/Hidden";
 import HomeIcon from "../../assets/HomeIcon";
+import { open } from "@/features/SwipeableTemporaryDrawer/STDSlice";
+import { useDispatch } from "react-redux";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -47,7 +49,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function ButtonAppBar() {
   const classes = useStyles();
-
+  const dispatch = useDispatch();
   return (
     <AppBar>
       <Toolbar>
@@ -56,6 +58,7 @@ export default function ButtonAppBar() {
           className={classes.menuButton}
           color="inherit"
           aria-label="menu"
+          onClick={() => dispatch(open(true))}
         >
           <MenuIcon fontSize="large" />
         </IconButton>
@@ -67,13 +70,13 @@ export default function ButtonAppBar() {
               </Typography>
             </Button>
 
-            <Button className="inherit">
+            <Button className="inherit" href="/ciudades">
               <Typography variant="h6" className={classes.title}>
                 CIUDADES
               </Typography>
             </Button>
 
-            <Button className="inherit">
+            <Button className="inherit" href="/contacto">
               <Typography variant="h6" className={classes.title}>
                 CONTACTA CON NOSOTROS
               </Typography>

@@ -1,0 +1,16 @@
+{
+  "servicios": [
+    {
+      "titulo": "Salas de Fiestas",
+      "descripcion": "Organice su despedida en las mejores salas de España. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "imagen": "https://estaticos-cdn.elperiodico.com/clip/d2053173-8566-4fe6-9d0e-8268986e747a_alta-libre-aspect-ratio_default_0.jpg",
+      "tituloImagen": "Sala de fiestas"
+    },
+    {
+      "titulo": "Alquiler de limusinas",
+      "descripcion": "Nada más cool que organizar su fiesta de despedida en una limusina de lujo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "imagen": "https://estaticos-cdn.elperiodico.com/clip/d2053173-8566-4fe6-9d0e-8268986e747a_alta-libre-aspect-ratio_default_0.jpg",
+      "tituloImagen": "Limusina"
+    }
+  ]
+}

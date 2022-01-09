@@ -1,0 +1,19 @@
+{
+  "ciudades": [
+    {
+      "ciudad": "Córdoba",
+      "descripcion": "Lo que sea",
+      "imagen": "https://s1.eestatic.com/2018/09/16/cultura/patrimonio/cordoba_-municipio-patrimonio-mezquitas_338479073_97401098_1706x960.jpg",
+      "ficha": "/ciudades/cordoba",
+      "pageData": {
+        "introduction": "Córdoba es una gran elección para celebrar sus despedida de solter@. \n Ofrece grandes oportunidades de diversión a través de una ammpplia oferta de actividades que seguro que harán de su despedida un momento único e inolvidable."
+      }
+    },
+    {
+      "ciudad": "Málaga",
+      "descripcion": "Lo que sea",
+      "imagen": "https://cdn.getyourguide.com/img/location/540dc85da2a04-m1409276338.jpg/88.jpg",
+      "ficha": "/ciudades/malaga"
+    }
+  ]
+}
