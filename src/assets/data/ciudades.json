@@ -6,7 +6,45 @@
       "imagen": "https://s1.eestatic.com/2018/09/16/cultura/patrimonio/cordoba_-municipio-patrimonio-mezquitas_338479073_97401098_1706x960.jpg",
       "ficha": "/ciudades/cordoba",
       "pageData": {
-        "introduction": "Córdoba es una gran elección para celebrar sus despedida de solter@. \n Ofrece grandes oportunidades de diversión a través de una ammpplia oferta de actividades que seguro que harán de su despedida un momento único e inolvidable."
+        "introduction": "Córdoba es una gran elección para celebrar sus despedida de solter@. \n Ofrece grandes oportunidades de diversión a través de una ammpplia oferta de actividades que seguro que harán de su despedida un momento único e inolvidable.",
+        "servicios": [
+          {
+            "titulo": "Disco Bus",
+            "imagen": "https://i.imgur.com/b2fkWgW.jpg",
+            "description": "Fiesta, baile, risas y buenos momentos en Disco Bus. La fiesta sobre ruedas de Córdoba que te lleva a los mejores sitios y tours de la ciudad de la manera más divertida. ¡Pasa una noche inolvidable con tus amigos o familia, una experiencia que recordarás para siempre! Uno de tus momentos más felices lo vivirás en el bus discoteca Disco Bus.",
+            "details": {
+              "images": [
+                "https://i.imgur.com/okt9M9h.jpg",
+                "https://i.imgur.com/4vCmQET.jpg",
+                "https://i.imgur.com/ZoYfIyJ.jpg"
+              ]
+            }
+          },
+          {
+            "titulo": "Bubble Football",
+            "imagen": "https://i.imgur.com/3kzkTJb.jpg",
+            "description": "¿No sabes qué es el Fútbol Burbuja? Bueno, acabarás de salir de un pozo o has estado mucho tiempo en la Luna. Así que te vamos a explicar un poco en qué consiste. \nEl fútbol burbuja no lo inventamos nosotros, aunque lo parezca. En realidad apareció en un programa de televisión del norte de Europa, que no te creas que son tan serios como parecen. En realidad son unos cachondos, por lo menos algunos. \nPero bueno, a lo que vamos. Las reglas del juego son bastante sencillas. Lo único que necesitas es reunir unos cuantos amigos (o no tan amigos, eso da un poco igual) y formar dos equipos. Todos los jugadores se meten en una burbuja de plástico gigante, que les cubre todo el cuerpo desde las rodillas y tienen que intentar marcar gol en la portería contraria.",
+            "details": {
+              "images": [
+                "https://i.imgur.com/okt9M9h.jpg",
+                "https://i.imgur.com/4vCmQET.jpg",
+                "https://i.imgur.com/ZoYfIyJ.jpg"
+              ]
+            }
+          },
+          {
+            "titulo": "Sala Ayode",
+            "imagen": "https://i.imgur.com/yUh4K8x.jpg",
+            "description": "Gran sala de despedidas en Córdoba. Toda una amplia oferta de servicios y eventos a precios competitivos. La sala Ayode siempre es un acierto si decide organizar su despedida en Córdoba.",
+            "details": {
+              "images": [
+                "https://i.imgur.com/okt9M9h.jpg",
+                "https://i.imgur.com/4vCmQET.jpg",
+                "https://i.imgur.com/ZoYfIyJ.jpg"
+              ]
+            }
+          }
+        ]
       }
     },
     {
@@ -14,6 +52,41 @@
       "descripcion": "Lo que sea",
       "imagen": "https://cdn.getyourguide.com/img/location/540dc85da2a04-m1409276338.jpg/88.jpg",
       "ficha": "/ciudades/malaga"
+    },
+    {
+      "ciudad": "Granada",
+      "descripcion": "Lo que sea",
+      "imagen": "https://s1.eestatic.com/2018/09/16/cultura/patrimonio/cordoba_-municipio-patrimonio-mezquitas_338479073_97401098_1706x960.jpg",
+      "ficha": "/ciudades/cordoba",
+      "pageData": {
+        "introduction": "Córdoba es una gran elección para celebrar sus despedida de solter@. \n Ofrece grandes oportunidades de diversión a través de una ammpplia oferta de actividades que seguro que harán de su despedida un momento único e inolvidable.",
+        "servicios": [
+          {
+            "titulo": "Disco Bus",
+            "imagen": "https://i.imgur.com/b2fkWgW.jpg",
+            "description": "Fiesta, baile, risas y buenos momentos en Disco Bus. La fiesta sobre ruedas de Córdoba que te lleva a los mejores sitios y tours de la ciudad de la manera más divertida. ¡Pasa una noche inolvidable con tus amigos o familia, una experiencia que recordarás para siempre! Uno de tus momentos más felices lo vivirás en el bus discoteca Disco Bus.",
+            "details": {
+              "images": [
+                "https://i.imgur.com/okt9M9h.jpg",
+                "https://i.imgur.com/4vCmQET.jpg",
+                "https://i.imgur.com/ZoYfIyJ.jpg"
+              ]
+            }
+          },
+          {
+            "titulo": "Bubble Football",
+            "imagen": "https://i.imgur.com/3kzkTJb.jpg",
+            "description": "¿No sabes qué es el Fútbol Burbuja? Bueno, acabarás de salir de un pozo o has estado mucho tiempo en la Luna. Así que te vamos a explicar un poco en qué consiste. \nEl fútbol burbuja no lo inventamos nosotros, aunque lo parezca. En realidad apareció en un programa de televisión del norte de Europa, que no te creas que son tan serios como parecen. En realidad son unos cachondos, por lo menos algunos. \nPero bueno, a lo que vamos. Las reglas del juego son bastante sencillas. Lo único que necesitas es reunir unos cuantos amigos (o no tan amigos, eso da un poco igual) y formar dos equipos. Todos los jugadores se meten en una burbuja de plástico gigante, que les cubre todo el cuerpo desde las rodillas y tienen que intentar marcar gol en la portería contraria.",
+            "details": {
+              "images": [
+                "https://i.imgur.com/okt9M9h.jpg",
+                "https://i.imgur.com/4vCmQET.jpg",
+                "https://i.imgur.com/ZoYfIyJ.jpg"
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }

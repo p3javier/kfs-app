@@ -32,6 +32,7 @@ const Routes = () => {
               <CityPage
                 imagen={ciudad.imagen}
                 introduction={ciudad.pageData?.introduction}
+                servicios={ciudad.pageData?.servicios}
               />
             )}
             exact
