@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import SvgIcon, { SvgIconProps } from "@material-ui/core/SvgIcon";
 //@ts-ignore TypeScript is ignored in the below line because it doesn't support ?component syntax.
-import HdkLogo from "../hdk.svg?component";
+import HdkLogo from "../medusa.svg?component";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
