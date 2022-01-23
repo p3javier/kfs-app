@@ -25,7 +25,7 @@ interface IServicio {
 const CityPage = (props: {
   imagen: string;
   introduction?: string;
-  servicios: IServicio[];
+  servicios?: IServicio[];
 }) => {
   const { imagen, introduction, servicios } = props;
   console.log("SERVICIOS", servicios);
