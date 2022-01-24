@@ -10,11 +10,11 @@ import {
   useTheme,
 } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
-
+import Carousel from "react-material-ui-carousel";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     mainBanner: {
-      height: theme.spacing(40),
+      minHeight: theme.spacing(40),
     },
     secondaryBanner: {
       height: theme.spacing(30),
@@ -38,7 +38,10 @@ export default function HeadBanner() {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Paper className={classes.mainBanner} elevation={4}>
-          <Typography variant="h1">Medusa Events</Typography>
+          <Carousel>
+            <img src="https://i.imgur.com/uYCCPJo.jpg" />
+            <img src="https://i.imgur.com/KYDt3wx.jpg" />
+          </Carousel>
         </Paper>
       </Grid>
       <Grid item xs={6}>
