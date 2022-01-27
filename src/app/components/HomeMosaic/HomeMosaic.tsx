@@ -1,7 +1,7 @@
 import React from "react";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 import Typography from "@material-ui/core/Typography";
 import {
   Theme,
@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Carousel from "react-material-ui-carousel";
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     mainBanner: {
@@ -39,8 +40,15 @@ export default function HeadBanner() {
       <Grid item xs={12}>
         <Paper className={classes.mainBanner} elevation={4}>
           <Carousel>
-            <img src="https://i.imgur.com/uYCCPJo.jpg" />
-            <img src="https://i.imgur.com/KYDt3wx.jpg" />
+            <div>
+              <img src="https://i.imgur.com/uYCCPJo.jpg" />
+              <p className="legend">Legend 1</p>
+            </div>
+
+            <div>
+              <img src="https://i.imgur.com/KYDt3wx.jpeg" />
+              <p className="legend">Legend 2</p>
+            </div>
           </Carousel>
         </Paper>
       </Grid>
