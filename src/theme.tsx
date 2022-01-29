@@ -1,4 +1,4 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import Astana from "./app/fonts/Astana-regular-italic.woff2";
 import { FontFace } from "./fontFaceInterface";
 import indigo from "@material-ui/core/colors/indigo";
@@ -17,7 +17,7 @@ const astanaWeb: FontFace = {
   unicodeRange:
     "U+0034, U+0035, U+0037, U+0039, U+0041-0091, U+0093, U+0097-0122, U+0192-0220, U+0224-0252",
 };
-const theme = createMuiTheme({
+const theme = createTheme({
   breakpoints: {
     values: {
       xs: 300,

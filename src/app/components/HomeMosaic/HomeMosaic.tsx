@@ -3,6 +3,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@material-ui/core/Typography";
+
 import {
   Theme,
   createStyles,
@@ -18,7 +19,10 @@ const useStyles = makeStyles((theme: Theme) =>
       minHeight: theme.spacing(40),
     },
     secondaryBanner: {
-      height: theme.spacing(30),
+      minHeight: theme.spacing(30),
+    },
+    carousel: {
+      backgroundColor: theme.palette.background.default,
     },
   })
 );
@@ -39,33 +43,41 @@ export default function HeadBanner() {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Paper className={classes.mainBanner} elevation={4}>
-          <Carousel>
+          <Carousel className={classes.carousel}>
             <div>
               <img src="https://i.imgur.com/uYCCPJo.jpg" />
               <p className="legend">Legend 1</p>
             </div>
 
             <div>
-              <img src="https://i.imgur.com/KYDt3wx.jpeg" />
+              <img
+                src={
+                  sizeOverSm
+                    ? "https://i.imgur.com/KYDt3wx.jpeg"
+                    : "https://i.imgur.com/4blvOrX.jpg"
+                }
+              />
               <p className="legend">Legend 2</p>
             </div>
           </Carousel>
         </Paper>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <Paper className={classes.secondaryBanner} elevation={4}>
-          <Typography variant="h2">
+          <Typography variant={sizeOverSm ? "h2" : "h4"} align="center">
             AGENCIA ESPECIALIZADA EN DESPEDIDAS DE SOLTERO/A
           </Typography>
         </Paper>
       </Grid>
-      <Grid item xs={6}>
-        <Paper className={classes.secondaryBanner} elevation={4}>
-          <Typography variant="h2">
-            MAXIMA PROFESIONALIDAD EN NUESTRO SERVICIO
-          </Typography>
-        </Paper>
-      </Grid>
+      {sizeOverSm ? (
+        <Grid item xs={12} md={6}>
+          <Paper className={classes.secondaryBanner} elevation={4}>
+            <Typography variant="h2">
+              MAXIMA PROFESIONALIDAD EN NUESTRO SERVICIO
+            </Typography>
+          </Paper>
+        </Grid>
+      ) : null}
     </Grid>
   );
 }
