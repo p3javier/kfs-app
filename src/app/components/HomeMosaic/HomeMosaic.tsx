@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     secondaryBanner: {
       minHeight: theme.spacing(30),
+      backgroundColor: theme.palette.background.default + "!important",
+      color: theme.palette.primary.contrastText + "!important",
     },
     carousel: {
       backgroundColor: theme.palette.background.default,
@@ -46,9 +48,7 @@ export default function HeadBanner() {
           <Carousel className={classes.carousel}>
             <div>
               <img src="https://i.imgur.com/uYCCPJo.jpg" />
-              <p className="legend">Legend 1</p>
             </div>
-
             <div>
               <img
                 src={
@@ -57,7 +57,6 @@ export default function HeadBanner() {
                     : "https://i.imgur.com/4blvOrX.jpg"
                 }
               />
-              <p className="legend">Legend 2</p>
             </div>
           </Carousel>
         </Paper>
