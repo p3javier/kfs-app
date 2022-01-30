@@ -90,7 +90,7 @@ export default function EmailSub() {
         <Hidden xsDown>
           <Grid item xs={5}>
             <img
-              src={ImageSub}
+              src="https://i.imgur.com/4blvOrX.jpg"
               alt="email subscription"
               className={classes.image}
             />
