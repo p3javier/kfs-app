@@ -9,13 +9,10 @@ export default function FooterDesktop() {
   return (
     <>
       <Grid item xs={12} sm={2}>
-        <Typography variant="h6">Nuestra comida</Typography>
+        <Typography variant="h6">Nuestros servicios</Typography>
         <List dense>
           <ListItem>
-            <ListItemText>Los más vendidos</ListItemText>
-          </ListItem>
-          <ListItem>
-            <ListItemText>Menú del día</ListItemText>
+            <ListItemText>Servicios destacados</ListItemText>
           </ListItem>
           <ListItem>
             <ListItemText>Ofertas</ListItemText>
@@ -30,9 +27,6 @@ export default function FooterDesktop() {
         <List dense>
           <ListItem>
             <ListItemText>Nuestra historia</ListItemText>
-          </ListItem>
-          <ListItem>
-            <ListItemText>Nuestro proceso de elaboración</ListItemText>
           </ListItem>
           <ListItem>
             <ListItemText>Trabaja con nosotros</ListItemText>
@@ -55,15 +49,6 @@ export default function FooterDesktop() {
       </Grid>
 
       <Grid item xs={12} sm={2}>
-        <Typography variant="h6">Nutrición</Typography>
-        <List dense>
-          <ListItem>
-            <ListItemText>Información nutricional</ListItemText>
-          </ListItem>
-          <ListItem>
-            <ListItemText>Alergenos</ListItemText>
-          </ListItem>
-        </List>
         <Typography variant="h6">Políticas</Typography>
         <List dense>
           <ListItem>
