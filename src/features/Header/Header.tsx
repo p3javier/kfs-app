@@ -64,7 +64,12 @@ export default function ButtonAppBar() {
         </IconButton>
         <Hidden smDown>
           <div className={classes.buttonsSection}>
-            <Button>
+            <Button className="inherit" href="/">
+              <Typography variant="h6" className={classes.title}>
+                INICIO
+              </Typography>
+            </Button>
+            <Button className="inherit" href="/servicios">
               <Typography variant="h6" className={classes.title}>
                 SERVICIOS
               </Typography>
