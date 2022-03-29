@@ -58,12 +58,7 @@ const Contacto = () => {
             alert(JSON.stringify(values, null, 2));
           }}
         >
-          <Form
-            name="contact"
-            netlify-honeypot="bot-field"
-            data-netlify={true}
-            hidden
-          >
+          <Form name="contact" netlify-honeypot="bot-field" data-netlify={true}>
             <input type="hidden" name="form-name" value="contact" />
             <Item>
               <Field
