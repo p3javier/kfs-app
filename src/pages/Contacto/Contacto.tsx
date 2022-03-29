@@ -58,7 +58,8 @@ const Contacto = () => {
             alert(JSON.stringify(values, null, 2));
           }}
         >
-          <Form>
+          <Form name="contact">
+            <input type="hidden" name="form-name" value="contact" />
             <Item>
               <Field
                 color="secondary"
