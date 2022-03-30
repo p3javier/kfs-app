@@ -6,6 +6,9 @@ import * as yup from "yup";
 
 import Box, { BoxProps } from "@mui/material/Box";
 
+import axios from "axios";
+import qs from "qs";
+
 function Item(props: BoxProps) {
   const { sx, ...other } = props;
   return (
@@ -39,6 +42,22 @@ const contactSchema = yup.object({
   consulta: yup.string(),
 });
 const Contacto = () => {
+  const handleSubmit = async (formValues: any) => {
+    const data = {
+      ...formValues,
+    };
+
+    try {
+      await axios({
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        data: qs.stringify(data),
+        url: "/",
+      });
+    } catch (e: any) {
+      throw new Error(e);
+    }
+  };
   return (
     <Container maxWidth="md">
       <Typography variant="h2" component="div" gutterBottom>
@@ -48,6 +67,8 @@ const Contacto = () => {
       <Box sx={{ display: "grid", gridTemplateRows: "repeat(3, 1fr)" }}>
         <Formik
           initialValues={{
+            "bot-field": "",
+            "form-name": "contact",
             nombre: "",
             email: "",
             telefono: "",
@@ -55,11 +76,13 @@ const Contacto = () => {
           }}
           validationSchema={contactSchema}
           onSubmit={(values) => {
+            handleSubmit({ ...values });
             alert(JSON.stringify(values, null, 2));
           }}
         >
-          <Form name="contact" netlify-honeypot="bot-field" data-netlify={true}>
-            <input type="hidden" name="form-name" value="contact" />
+          <Form name="contact" data-netlify="true">
+            <Field type="hidden" name="bot-field" />
+            <Field type="hidden" name="form-name" />
             <Item>
               <Field
                 color="secondary"
