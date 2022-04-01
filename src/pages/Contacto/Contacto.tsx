@@ -64,7 +64,7 @@ const Contacto = () => {
         Contacto / Reservas
       </Typography>
 
-      <Box sx={{ display: "grid", gridTemplateRows: "repeat(3, 1fr)" }}>
+      <Box sx={{ display: "grid" }}>
         <Formik
           initialValues={{
             "bot-field": "",
