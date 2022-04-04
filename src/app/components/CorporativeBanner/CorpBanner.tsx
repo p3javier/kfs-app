@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
+import openLink from "@/functions/openLink";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -22,8 +23,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 export default function CorpBanner() {
   const classes = useStyles();
-  const handleClick = () =>
-    window.open("http://localhost:3000/trabaja-con-nosotros", "_self");
+  const handleClick = () => openLink("/trabaja-con-nosotros");
   return (
     <Stack spacing={2}>
       <Paper className={classes.paper} onClick={handleClick}>
