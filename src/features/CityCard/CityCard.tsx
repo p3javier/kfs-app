@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { ICiudad } from "@/typescript/ICiudad";
-import openLink from "./openLink";
+import openLink from "@/functions/openLink";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

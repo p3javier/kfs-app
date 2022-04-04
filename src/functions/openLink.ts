@@ -3,6 +3,8 @@ function urlBuilder(ficha: string) {
   if (process.env.NODE_ENV === "development") {
     return `http://localhost:3000${ficha}`;
   }
+  const currentHost = window.location.hostname;
+  return `https://${currentHost}${ficha}`;
 }
 
 export default function openLink(ficha: string) {

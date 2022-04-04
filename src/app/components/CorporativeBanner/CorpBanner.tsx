@@ -22,9 +22,11 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 export default function CorpBanner() {
   const classes = useStyles();
+  const handleClick = () =>
+    window.open("http://localhost:3000/trabaja-con-nosotros", "_self");
   return (
     <Stack spacing={2}>
-      <Paper className={classes.paper}>
+      <Paper className={classes.paper} onClick={handleClick}>
         <Box textAlign="center" fontFamily="Astana">
           <Typography variant="h2" style={{ color: "#FECAF8" }}>
             Trabaja con nosotros
