@@ -9,6 +9,7 @@ import CityPage from "@/features/CityPage/CityPage";
 import Servicios from "@/pages/Servicios/Servicios";
 import Contacto from "@/pages/Contacto/Contacto";
 import TrabajaNosotros from "@/pages/TrabajaNosotros/TrabajaNosotros";
+import NuestroCompromiso from "@/pages/NuestroCompromiso/NuestroCompromiso";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -27,6 +28,7 @@ const Routes = () => {
         <Route path="/ciudades" component={Ciudades} exact />
         <Route path="/" component={Home} exact />
         <Route path="/contacto" component={Contacto} exact />
+        <Route path="/nuestro-compromiso" component={NuestroCompromiso} exact />
         <Route path="/trabaja-con-nosotros" component={TrabajaNosotros} exact />
         {data.ciudades.map((ciudad) => (
           <Route
