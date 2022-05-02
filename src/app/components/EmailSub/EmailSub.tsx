@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Theme,
   createStyles,
@@ -12,7 +12,7 @@ import Box from "@material-ui/core/Box";
 import Hidden from "@material-ui/core/Hidden";
 import ImageSub from "../../images/email-sub.jpg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-
+import EmailSubForm from "@/app/components/EmailSubForm/EmailSubForm";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     button: {
@@ -62,12 +62,15 @@ export default function EmailSub() {
   const classes = useStyles();
   const theme = useTheme();
   const sizeOverSm = useMediaQuery(theme.breakpoints.up("sm"));
+  const [emailOpen, setEmailOpen] = useState(false);
   let colsNumber: boolean | GridSize;
   if (sizeOverSm) {
     colsNumber = 7;
   } else {
     colsNumber = 12;
   }
+
+  const handleClick = () => setEmailOpen(!emailOpen);
   return (
     <div>
       <Grid container spacing={2}>
@@ -83,9 +86,11 @@ export default function EmailSub() {
             color="secondary"
             disableElevation
             className={classes.button}
+            onClick={() => handleClick()}
           >
             <Typography variant="h6">¡VENGA, ME SUSCRIBO!</Typography>
           </Button>
+          {emailOpen ? <EmailSubForm /> : null}
         </Grid>
         <Hidden xsDown>
           <Grid item xs={5}>
