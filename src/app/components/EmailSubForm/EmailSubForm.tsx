@@ -43,7 +43,7 @@ const EmailSubForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      handleSubmit({ ...values });
+      handleSubmit({ ...values, "form-name": "email-sub" });
       alert(JSON.stringify(values, null, 2));
     },
   });
