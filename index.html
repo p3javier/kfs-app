@@ -20,6 +20,17 @@
       <textarea name="consulta"></textarea>
       <input name="bot-field" type="hidden" />
     </form>
+    <form
+      name="email-sub"
+      netlify
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="nombre" />
+      <input type="email" name="email" />
+      <input name="bot-field" type="hidden" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
