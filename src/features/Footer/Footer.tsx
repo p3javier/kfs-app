@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme: Theme) =>
     footer: {
       backgroundColor: theme.palette.secondary.main,
       color: "#fff",
-      minHeight: 400,
       flexGrow: 1,
     },
     content: {

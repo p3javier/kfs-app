@@ -11,6 +11,7 @@ import Contacto from "@/pages/Contacto/Contacto";
 import TrabajaNosotros from "@/pages/TrabajaNosotros/TrabajaNosotros";
 import NuestroCompromiso from "@/pages/NuestroCompromiso/NuestroCompromiso";
 import NuestraHistoria from "./pages/NuestraHistoria/NuestraHistoria";
+import PoliticasDePrivacidad from "./pages/politicas-de-privacidad/PoliticasDePrivacidad";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -32,6 +33,11 @@ const Routes = () => {
         <Route path="/nuestro-compromiso" component={NuestroCompromiso} exact />
         <Route path="/trabaja-con-nosotros" component={TrabajaNosotros} exact />
         <Route path="/nuestra-historia" component={NuestraHistoria} exact />
+        <Route
+          path="/politicas-de-privacidad"
+          component={PoliticasDePrivacidad}
+          exact
+        />
         {data.ciudades.map((ciudad) => (
           <Route
             path={ciudad.ficha}

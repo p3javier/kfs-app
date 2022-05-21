@@ -71,7 +71,11 @@ export default function FooterDesktop() {
         <Typography variant="h6">Políticas</Typography>
         <List dense>
           <ListItem>
-            <ListItemText>Política de Privacidad</ListItemText>
+            <ListItemText>
+              <CustomLink href="/politicas-de-privacidad" underline="hover">
+                Política de Privacidad
+              </CustomLink>
+            </ListItemText>
           </ListItem>
           <ListItem>
             <ListItemText>Uso de Cookies</ListItemText>

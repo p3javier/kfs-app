@@ -20,6 +20,7 @@ interface IServicio {
   imagen: string;
   details: {
     images: string[];
+    info: string[];
   };
 }
 const CityPage = (props: {
@@ -53,7 +54,7 @@ const CityPage = (props: {
                 titulo={servicio.titulo}
                 description={servicio.description}
                 imagen={servicio.imagen}
-                images={servicio.details.images}
+                details={servicio.details}
               />
             ))
           ) : (
