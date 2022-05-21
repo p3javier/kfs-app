@@ -25,8 +25,8 @@ const ServiceCard = (props: {
   imagen: string;
   description: string;
   details?: {
-    images: string[];
-    info: string[];
+    images?: string[];
+    info?: string[];
   };
 }) => {
   const { titulo, description, imagen, details } = props;
@@ -76,7 +76,7 @@ const ServiceCard = (props: {
         open={open}
         handleClose={handleClose}
         title={titulo}
-        body={details.info}
+        body={details ? details.info : []}
       />
     </>
   );

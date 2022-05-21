@@ -18,9 +18,9 @@ interface IServicio {
   titulo: string;
   description: string;
   imagen: string;
-  details: {
-    images: string[];
-    info: string[];
+  details?: {
+    images?: string[];
+    info?: string[];
   };
 }
 const CityPage = (props: {
